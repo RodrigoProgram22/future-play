@@ -1,27 +1,35 @@
 # FuturePlay
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
+Esta es una página web dedicada a proporcionar información actualizada sobre juegos, incluyendo detalles sobre próximos lanzamientos, fechas de estreno, plataformas disponibles y más. El objetivo de esta página es ayudar a los jugadores a mantenerse informados sobre los juegos que les interesan.
 
-## Development server
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Cómo utilizar la página
 
-## Code scaffolding
+En la página principal, puedes encontrar una lista de los juegos más populares del momento, junto con información básica sobre ellos. También puedes utilizar la barra de búsqueda para buscar un juego específico por su título.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Además, si haces clic en el botón "Próximos lanzamientos", podrás ver una lista de juegos que están por salir en las próximas semanas y meses, con información sobre su fecha de lanzamiento y las plataformas disponibles.
 
-## Build
+## Tecnología utilizada
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Esta página está construida utilizando Angular para el front-end y la API de FreeToGame para recopilar y mostrar información de los juegos.
 
-## Running unit tests
+## Contribuciones
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Este proyecto está en constante desarrollo y se aceptan contribuciones. Si deseas contribuir, puedes hacer una solicitud de extracción y serás revisado.
 
-## Running end-to-end tests
+## Cómo ejecutar el proyecto en tu máquina
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Para ejecutar el proyecto en tu máquina, sigue estos pasos:
 
-## Further help
+1.  Clona el repositorio en tu máquina utilizando el comando git clone <URL del repositorio>.
+1.  Abre una terminal en el directorio del proyecto.
+1.  Instala las dependencias utilizando el comando npm install.
+1.  Ejecuta el servidor de desarrollo con el comando ng serve.
+1.  Abre tu navegador web y visita la dirección http://localhost:4200/.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Contacto
+
+Si tienes alguna pregunta o sugerencia sobre esta página, no dudes en ponerte en contacto con nosotros a través de nuestra dirección de correo electrónico: rodrigoprograma22@gmail.com
+
+¡Gracias por visitar nuestra página!
