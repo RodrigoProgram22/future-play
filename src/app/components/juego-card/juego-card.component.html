@@ -1,0 +1,14 @@
+<div class="card m-2">
+  <img src="{{ game.thumbnail }}" class="card-img-top" alt="..." />
+  <div class="card-body">
+    <h5 class="card-title">{{ game.title }}</h5>
+    <div class="card-text">
+      <p>{{ game.genre }}</p>
+      <p>{{game.platform}}</p>
+      <p>
+        {{ game.short_description }}
+      </p>
+    </div>
+    <a href="{{ game.game_url }}" class="btn btn-dark">Ver Juego</a>
+  </div>
+</div>
