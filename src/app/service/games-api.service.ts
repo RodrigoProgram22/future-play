@@ -21,4 +21,7 @@ export class GamesApiService {
   public getGameRelevantes(): Observable<any> {
     return this.http.get(this.urlAPI+"?sort-by=relevance");
   }
+  public getGameGenero(genero:string): Observable<any> {
+    return this.http.get(`${this.urlAPI}?category=${genero}`);
+  }
 }

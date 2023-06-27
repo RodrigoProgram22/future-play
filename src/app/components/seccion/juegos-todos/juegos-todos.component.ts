@@ -14,7 +14,6 @@ export class JuegosTodosComponent implements OnInit {
   ngOnInit(): void {
     this.apiG.getGameAlfab().subscribe((data) => {
       this.juegos = data;
-      console.log(this.juegos);
     });
   }
 }
