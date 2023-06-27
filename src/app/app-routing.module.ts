@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { JuegosTodosComponent } from './components/seccion/juegos-todos/juegos-todos.component';
 import { JuegosGeneroComponent } from './components/seccion/juegos-genero/juegos-genero.component';
 import { JuegosFlataformaComponent } from './components/seccion/juegos-flataforma/juegos-flataforma.component';
+import { JuegosNuevosComponent } from './components/seccion/juegos-nuevos/juegos-nuevos.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
@@ -11,7 +12,7 @@ const routes: Routes = [
   { path: 'juegos-genero', component: JuegosGeneroComponent },
   { path: 'juegos-todos', component: JuegosTodosComponent },
   { path: 'juegos-plataforma', component: JuegosFlataformaComponent },
-  { path: 'juegos-nuevos', component: JuegosTodosComponent },
+  { path: 'juegos-nuevos', component: JuegosNuevosComponent },
 ];
 
 @NgModule({

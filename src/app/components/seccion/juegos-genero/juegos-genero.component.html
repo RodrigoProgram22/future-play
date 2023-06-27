@@ -4,8 +4,10 @@
 <article class="container text-light text-center">
   <h2 class="mb-4">Filtrar Juegos por Género</h2>
 
-  <div class="btn-group" role="group" aria-label="Género">
-    <button type="button" class="btn btn-dark" (click)="buscarTodos()">Todos</button>
+  <div class="btn-group d-flex flex-wrap my-3" role="group" aria-label="Género">
+    <button type="button" class="btn btn-dark" (click)="buscarTodos()">
+      Todos
+    </button>
     <button type="button" class="btn btn-dark" (click)="buscarJuego('shooter')">
       Shooter
     </button>
@@ -24,17 +26,49 @@
       class="btn btn-dark"
       (click)="buscarJuego('Fighting')"
     >
-      Lucha</button
-    ><button type="button" class="btn btn-dark" (click)="buscarJuego('card')">
-      Juego de Cartas</button
-    ><button type="button" class="btn btn-dark" (click)="buscarJuego('MOBA')">
-      MOBA</button
-    ><button type="button" class="btn btn-dark" (click)="buscarJuego('Sports')">
-      Deportes</button
-    ><button type="button" class="btn btn-dark" (click)="buscarJuego('Racing')">
+      Lucha
+    </button>
+    <button type="button" class="btn btn-dark" (click)="buscarJuego('card')">
+      Juego de Cartas
+    </button>
+    <button
+      type="button"
+      class="btn btn-dark"
+      (click)="buscarJuego('battle-royale')"
+    >
+      Battle Royale
+    </button>
+    <button type="button" class="btn btn-dark" (click)="buscarJuego('Sports')">
+      Deportes
+    </button>
+    <button type="button" class="btn btn-dark" (click)="buscarJuego('Racing')">
       Carreras
     </button>
+    <button type="button" class="btn btn-dark" (click)="buscarJuego('zombie')">
+      Zombie
+    </button>
+    <button
+      type="button"
+      class="btn btn-dark"
+      (click)="buscarJuego('survival')"
+    >
+      Survival
+    </button>
+    <button
+      type="button"
+      class="btn btn-dark"
+      (click)="buscarJuego('open-world')"
+    >
+      Mundo Abierto
+    </button>
+    <button type="button" class="btn btn-dark" (click)="buscarJuego('anime')">
+      Anime
+    </button>
+    <button type="button" class="btn btn-dark" (click)="buscarJuego('MMO')">
+      MMO
+    </button>
   </div>
+
   <div class="container">
     <div class="row row-cols-1 row-cols-md-4 g-4">
       <div *ngFor="let game of juegos" class="col">
