@@ -24,4 +24,7 @@ export class GamesApiService {
   public getGameGenero(genero:string): Observable<any> {
     return this.http.get(`${this.urlAPI}?category=${genero}`);
   }
+  public getGamePlataforma(plataf:string): Observable<any> {
+    return this.http.get(`${this.urlAPI}?platform=${plataf}`);
+  }
 }

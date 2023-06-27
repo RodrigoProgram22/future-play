@@ -2,7 +2,7 @@ a {
   text-decoration: none;
 }
 header {
-  background-image: url(../../../assets/img/header.jpg) ;
+  background-image: url(../../../assets/img/header.jpg);
   object-fit: contain;
   background-repeat: no-repeat;
   background-size: cover;
