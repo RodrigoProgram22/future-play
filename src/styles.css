@@ -1,3 +1,23 @@
-body {
+.body {
   background-color: #222121;
+}
+:root {
+  --primary: #bcbcbc;
+  --secondary: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+.text-primario {
+  color: var(--primary);
+}
+.text-secundario {
+  color: var(--secondary);
+}
+* {
+  font-family: "Quicksand", sans-serif;
 }

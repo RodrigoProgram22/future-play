@@ -8,13 +8,16 @@ import { GamesApiService } from 'src/app/service/games-api.service';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  juegos: Game[] = [];
+  juegosNuevos: Game[] = [];
+  juegosRelev: Game[] = [];
   constructor(private apiG: GamesApiService) {}
 
   ngOnInit(): void {
-    this.apiG.getData().subscribe((data) => {
-      this.juegos = data;
-      console.log(this.juegos);
+    this.apiG.getGamePorFecha().subscribe((data) => {
+      this.juegosNuevos = data.slice(0,4);
+    });
+    this.apiG.getGameRelevantes().subscribe((data) => {
+      this.juegosRelev = data.slice(7,11);
     });
   }
 }

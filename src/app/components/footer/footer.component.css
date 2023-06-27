@@ -1,0 +1,27 @@
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  transform: scale(1.1);
+}
+.icon-footer {
+  font-size: 25px;
+  transition: all 0.5s;
+  color: var(--primary);
+}
+.icon-footer:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+.logoFooter {
+  width: 120px;
+  object-fit: contain;
+  transition: all 0.5s;
+}
+.logoFooter:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  object-fit: contain;
+}

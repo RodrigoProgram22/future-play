@@ -9,7 +9,16 @@ export class GamesApiService {
   private urlAPI: string = 'https://www.freetogame.com/api/games';
   constructor(private http: HttpClient) {}
 
-  public getData(): Observable<any> {
+  public getGame(): Observable<any> {
     return this.http.get(this.urlAPI);
+  }
+  public getGamePorFecha(): Observable<any> {
+    return this.http.get(this.urlAPI+"?sort-by=date");
+  }
+  public getGameAlfab(): Observable<any> {
+    return this.http.get(this.urlAPI+"?sort-by=alphabetical");
+  }
+  public getGameRelevantes(): Observable<any> {
+    return this.http.get(this.urlAPI+"?sort-by=relevance");
   }
 }

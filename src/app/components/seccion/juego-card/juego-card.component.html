@@ -1,4 +1,4 @@
-<div class="card m-2">
+<div class="card m-2 bg-dark text-light">
   <img src="{{ game.thumbnail }}" class="card-img-top" alt="..." />
   <div class="card-body">
     <h5 class="card-title">{{ game.title }}</h5>
@@ -9,6 +9,6 @@
         {{ game.short_description }}
       </p>
     </div>
-    <a href="{{ game.game_url }}" class="btn btn-dark">Ver Juego</a>
+    <a href="{{ game.game_url }}"  target="_blank" class="btn btn-light">Ver Juego</a>
   </div>
 </div>
