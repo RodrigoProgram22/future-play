@@ -7,7 +7,7 @@
   <div class="row row-cols-1 row-cols-md-4 g-4">
     <div *ngFor="let game of juegosNuevos" class="col">
       <div class="col card m-2 bg-dark text-light">
-        <img src="{{ game.thumbnail }}" class="card-img-top" alt="..." />
+        <img src="{{ game.thumbnail }}" class="card-img-top" alt="{{game.title}}" />
         <div class="card-body">
           <h5 class="card-title">{{ game.title }}</h5>
           <div class="card-text">
