@@ -7,7 +7,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { JuegosModule} from './modules/juegos/juegos.module';
-// import { NgOptimizedImage } '@angular/common';
+import { NgOptimizedImage } from '@angular/common';
 @NgModule({
   declarations: [AppComponent, HomeComponent, NavComponent, FooterComponent,],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule,JuegosModule],
