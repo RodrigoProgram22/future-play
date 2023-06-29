@@ -1,4 +1,4 @@
-<header class=" text-center text-light  bg-dark w-100 p-5 opaco fuente1">
+<header class=" text-center text-light bg-dark w-100 p-5 opaco fuente1">
   <h1 class="my-4">¡Descubre los mejores juegos gratis!</h1>
   <p>Disponible para que puedas jugar en diferentes plataformas.</p>
 </header>
@@ -18,7 +18,9 @@
                 {{ game.short_description }}
               </p> -->
           </div>
-          <a href="{{ game.game_url }}"  target="_blank" class="btn btn-danger">Ver Juego</a>
+          <div class="text-center">
+            <a href="{{ game.game_url }}"  target="_blank" class="btn btn-danger">Ver Juego</a>
+          </div>
         </div>
       </div>
     </div>
@@ -29,7 +31,7 @@
     <div class="row row-cols-1 row-cols-md-4 g-4">
       <div *ngFor="let game of juegosRelev" class="col">
         <div class="col card m-2 bg-dark text-light">
-          <img src="{{ game.thumbnail }}" class="card-img-top" alt="..." />
+          <img src="{{ game.thumbnail }}" class="card-img-top" alt="{{game.title}}" />
           <div class="card-body">
             <h5 class="card-title">{{ game.title }}</h5>
             <div class="card-text">
@@ -40,7 +42,9 @@
                 {{ game.short_description }}
               </p> -->
             </div>
-            <a href="{{ game.game_url }}"  target="_blank" class="btn btn-danger">Ver Juego</a>
+            <div class="text-center">
+              <a href="{{ game.game_url }}"  target="_blank" class="btn btn-danger">Ver Juego</a>
+            </div>
           </div>
         </div>
       </div>

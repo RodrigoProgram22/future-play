@@ -25,3 +25,6 @@ a:hover {
   opacity: 0.5;
   object-fit: contain;
 }
+.bg-oscuro{
+  background-color: black;
+}
